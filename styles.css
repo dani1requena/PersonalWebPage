@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap');
+
+
+.bio-photo {
+    float: right;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 300px;
+    width: 300px; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header, footer {
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    margin-left: 30px;
+}
+
+#projects .project, #experience .job {
+    margin-bottom: 20px;
+}
+
+.contact a, .contact i{
+    font-size: 4rem;
+    margin: 0 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.app-functions {
+    color: #007bff; 
+    cursor: pointer;
+    display: inline-block;
+}
+
+.function-list {
+    border-radius: 10px;
+    background-color: #575654;
+    box-sizing: border-box;
+    display: inline-block;
+    width: fit-content; 
+}
+
+.function-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.function-list li {
+    color: #f0e68c;
+    background-color: #575654;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+    display: block;
+}
+
+p, h3 {
+    font-family: 'Source Code Pro', monospace;
+}
+
+h2, h1 {
+    font-family: 'Ysabeau SC', cursive;
+}
+
+#drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#drawer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#drawer ul li {
+    margin-bottom: 10px;
+}
+
+#main-content {
+    margin-right: 220px;
+}
+
+
+.function-list li::before {
+    content: '#';
+    color: #f0e68c;
+    margin-right: 5px;
+}
+
+.app-functions:hover {
+    box-sizing: border-box; 
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    padding: 5px; 
+}
