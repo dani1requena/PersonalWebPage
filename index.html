@@ -14,8 +14,8 @@
             <p>DESARROLLADOR WEB/APLICACIONES</p>
         </div>
     </header>
-    <button id="language-toggle" onclick="toggleLanguage()">English</button>
     <div id="main-content">
+        <button id="toggle-language">Cambiar a Inglés</button>
         <section id="bio" class="container">
             <h2>Biografía</h2>
             <p>Estimados equipos de desarrollo,</p>
@@ -27,14 +27,13 @@
             <p>Quedo a su disposición para cualquier pregunta o consulta adicional, y espero con interés la posibilidad de colaborar juntos en futuros proyectos.</p>
             <p>Atentamente,</p>
             <p>Daniel Requena</p>
-
         </section>
         <section id="projects" class="container">
             <h2>Proyectos</h2>
-            <div class="project">
+            <div id="project1" class="project">
                 <h3>CarSell</h3>
                 <p>Proyecto FullStack en Flutter para web por ahora, utilizando NestJs para Back.</p>
-                <p class="app-functions" onclick="toggleAppFunctions()">Esta aplicación permite:</p>
+                <p class="app-functions" onclick="toggleAppFunctions('app-functions-list')">Esta aplicación permite:</p>
                 <div id="app-functions-list" class="function-list" style="display: none;">
                     <ul> 
                         <li>Registrar/crear usuario</li>
@@ -47,41 +46,55 @@
                 </div>
                 <p><a href="https://github.com/dani1requena/CarSell.git">Ver Proyecto</a></p>
             </div>
+            <div id="project-book" class="project-book">
+                <h3 class="project-book-title">LaBibliotecaDeCoper</h3>
+                <p class="project-book-description">Proyecto FullStack en React para móvil, utilizando SpringBoot para Back.</p>
+                <p class="project-book-functions" onclick="toggleAppFunctions('app-functions-list-book')">Esta aplicación permite:</p>
+                <div id="app-functions-list-book" class="function-list" style="display: none;">
+                    <ul>
+                        <li>*Leer libros en PDF, registrados en categorías en el cliente</li>
+                        <li>EN SERVIDOR</li>
+                        <li>*Crear libro</li>
+                        <li>*Editar libro</li>
+                        <li>*Eliminar libro</li>
+                    </ul>
+                </div>
+                <p><a class="project-book-link-server" href="https://github.com/dani1requena/LaBibliotecaDeCoper-Server.git">Ver Proyecto Server</a></p>
+                <p><a class="project-book-link-client" href="https://github.com/dani1requena/LaBibliotecaDeCoper-Cliente.git">Ver Proyecto Cliente</a></p>
+            </div>
         </section>
         <section id="experience" class="container">
             <h2>Experiencia Laboral</h2>
-            <div class="job">
-                <h3>Desarrollador de Software en Inetum</h3>
-                <p>Trabajé en Inetum durante desde el 16/10/2022 hasta el 18/11/2023 como desarrollador.</p>
-                <p>·    Comenzamos nuestra trayectoria como un grupo de estudiantes, embarcándonos en proyectos pequeños peer to peer. Posteriormente, 
-                    nos aventuramos en la creación de una aplicación tipo blog, en la cual los usuarios 
-                    podían interactuar mediante comentarios en las publicaciones. En aquel entonces éramos un equipo de 12 personas, 
-                    el cual se subdividió en grupos de 4 para abordar diferentes aspectos del desarrollo. Utilizamos tecnologías como NestJs 
-                    para el backend, y Angular con Ionic para el frontend, llevando a cabo alrededor de 4 sprints antes de que comenzáramos 
-                    a ser asignados a proyectos más amplios.</p>
-                <p>·    Uno de los proyectos en los que participé fue el de Asistencia Jurídica Gratuita. Este proyecto se desarrolló utilizando SpringBoot, 
-                    además de hacer uso de HTML y PLSQL, entre otras tecnologías. En este caso, éramos un equipo de tan solo dos compañeros, siendo mi 
-                    compañero un profesional senior con años de experiencia en la aplicación. Nuestro trabajo implicaba reuniones periódicas, la 
-                    elaboración de documentación detallada, y tuve el privilegio de participar en la implementación de dos actualizaciones significativas 
-                    durante el tiempo que estuve involucrado en el proyecto</p>
-                    <img src="DixieBeer.jpg" alt="Inetum" width="700" height="400">
-            </div>
+            <h3>Desarrollador de Software en Inetum</h3>
+            <p>Trabajé en Inetum durante desde el 16/10/2022 hasta el 18/11/2023 como desarrollador.</p>
+            <p>·    Comenzamos nuestra trayectoria como un grupo de estudiantes, embarcándonos en proyectos pequeños peer to peer. Posteriormente, 
+                nos aventuramos en la creación de una aplicación tipo blog, en la cual los usuarios 
+                podían interactuar mediante comentarios en las publicaciones. En aquel entonces éramos un equipo de 12 personas, 
+                el cual se subdividió en grupos de 4 para abordar diferentes aspectos del desarrollo. Utilizamos tecnologías como NestJs 
+                para el backend, y Angular con Ionic para el frontend, llevando a cabo alrededor de 4 sprints antes de que comenzáramos 
+                a ser asignados a proyectos más amplios.</p>
+            <p>·    Uno de los proyectos en los que participé fue el de Asistencia Jurídica Gratuita. Este proyecto se desarrolló utilizando SpringBoot, 
+                además de hacer uso de HTML y PLSQL, entre otras tecnologías. En este caso, éramos un equipo de tan solo dos compañeros, siendo mi 
+                compañero un profesional senior con años de experiencia en la aplicación. Nuestro trabajo implicaba reuniones periódicas, la 
+                elaboración de documentación detallada, y tuve el privilegio de participar en la implementación de dos actualizaciones significativas 
+                durante el tiempo que estuve involucrado en el proyecto.</p>
+            <img src="DixieBeer.jpg" alt="Inetum" width="700" height="400">
         </section>
         <section id="education" class="container">
             <h2>Educación</h2>
-            <div class="education">
+            <div class="education-div">
                 <h3>Desarrollo Aplicaciones Multiplataforma</h3>
                 <p>IES Joan d' Austria</p>
                 <p>Fecha: 20/09/2021 => 20/06/2023</p>
                 <p>Tecnologías y lenguajes con las que he trabajado:</p>
-                <p>*    Java</p>
-                <p>*    SpringBoot</p>
-                <p>*    Python</p>
-                <p>*    Kubernetes</p>
-                <p>*    Android Studio</p>
-                <p>*    html</p>
-                <p>*    sql plsql</p>
-                <p>*    MongoDB</p>
+                <p>·    Java</p>
+                <p>·    SpringBoot</p>
+                <p>·    Python</p>
+                <p>·    Kubernetes</p>
+                <p>·    Android Studio</p>
+                <p>·    html</p>
+                <p>·    sql plsql</p>
+                <p>·    MongoDB</p>
             </div>
         </section>
         <section id="contact" class="container">

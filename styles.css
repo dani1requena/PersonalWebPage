@@ -11,6 +11,18 @@
     width: 300px; 
 }
 
+#toggle-language {
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0); 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -45,7 +57,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.app-functions {
+.app-functions, .project-book-functions {
     color: #007bff; 
     cursor: pointer;
     display: inline-block;
