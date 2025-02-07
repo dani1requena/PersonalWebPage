@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             experienceTitle: "Experiencia Laboral",
             jobTitle: "Desarrollador de Software en Inetum",
-            jobDescription1: "Trabajé en Inetum desde el 16/10/2022 hasta el 18/04/2023 como desarrollador.",
+            jobDescription1: "Trabajé en Inetum desde el 16/10/2022 hasta el 18/04/2024 como desarrollador.",
             jobDescription2: "· Comenzamos nuestra trayectoria como un grupo de estudiantes, embarcándonos en proyectos pequeños peer to peer. Posteriormente, nos aventuramos en la creación de una aplicación tipo blog, en la cual los usuarios podían interactuar mediante comentarios en las publicaciones. En aquel entonces éramos un equipo de 12 personas, el cual se subdividió en grupos de 4 para abordar diferentes aspectos del desarrollo. Utilizamos tecnologías como NestJs para el backend, y Angular con Ionic para el frontend, llevando a cabo alrededor de 4 sprints antes de que comenzáramos a ser asignados a proyectos más amplios.",
             jobDescription3: "· Uno de los proyectos en los que participé fue el de Asistencia Jurídica Gratuita. Este proyecto se desarrolló utilizando SpringBoot, además de hacer uso de HTML y PLSQL, entre otras tecnologías. En este caso, éramos un equipo de tan solo dos compañeros, siendo mi compañero un profesional senior con años de experiencia en la aplicación. Nuestro trabajo implicaba reuniones periódicas, la elaboración de documentación detallada, y tuve el privilegio de participar en la implementación de dos actualizaciones significativas durante el tiempo que estuve involucrado en el proyecto.",
 
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             experienceTitle: "Work Experience",
             jobTitle: "Software Developer at Inetum",
-            jobDescription1: "I worked at Inetum from 10/16/2022 to 18/04/2023 as a developer.",
+            jobDescription1: "I worked at Inetum from 10/16/2022 to 18/04/2024 as a developer.",
             jobDescription2: "· We started our journey as a group of students, embarking on small peer-to-peer projects. Later, we ventured into creating a blog-type application where users could interact through comments on posts. At that time, we were a team of 12 people, which was divided into groups of 4 to address different aspects of development. We used technologies such as NestJs for the backend and Angular with Ionic for the frontend, carrying out about 4 sprints before we began to be assigned to larger projects.",
             jobDescription3: "· One of the projects I participated in was Free Legal Assistance. This project was developed using SpringBoot, along with HTML and PLSQL, among other technologies. In this case, we were a team of only two colleagues, with my colleague being a senior professional with years of experience in the application. Our work involved periodic meetings, the preparation of detailed documentation, and I had the privilege of participating in the implementation of two major updates during the time I was involved in the project.",
 
